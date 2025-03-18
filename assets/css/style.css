@@ -13,7 +13,7 @@ body {
     font-family: Helvetica, sans-serif;
     font-size: 1.2rem;
     line-height: 110%;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .background {
