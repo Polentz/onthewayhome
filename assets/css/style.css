@@ -22,7 +22,9 @@ body {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     background-image: url("../media/logo.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -46,10 +48,12 @@ body {
     position: absolute;
     padding: 15px 15px;
     -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
     border: 1px solid #000;
     background-color: #fff;
     -webkit-transition: all 0.1s;
+    -o-transition: all 0.1s;
     transition: all 0.1s;
     z-index: 999;
 }
@@ -175,10 +179,19 @@ body {
         position: fixed;
         top: 0;
         left: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         gap: 1rem;
         padding: 1rem;
         text-align: center;
