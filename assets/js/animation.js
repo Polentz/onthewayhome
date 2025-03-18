@@ -99,7 +99,7 @@ let blocks = [
     "Franz mi chiede se La città mi piaccia",
     "Non mi piace, solo oltre il fiume qualcosa sembra essere reale e i volti meno ricalcati da affreschi fuori tempo. A un certo punto mi blocco, inizio a fissare un edificio illuminato, non riesco a distogliere lo sguardo, come sotto incantesimo. 'Quelli sono gli Uffizi', mi dice. Lì dentro, penso, c'è un pulsare che non si spegne, che non si vende.",
 
-    "il mio compagno è venuto a prendermi dopo il lungo viaggio. Andiamo nel nostro ristorante sushi preferito. Ascolta per tutta sera i miei racconti, i suoi occhi sono i nidi di faggio in cui trovo rifugio.",
+    "Il mio compagno è venuto a prendermi dopo il lungo viaggio. Andiamo nel nostro ristorante sushi preferito. Ascolta per tutta sera i miei racconti, i suoi occhi sono i nidi di faggio in cui trovo rifugio.",
 
     "Scelgo il sentiero dietro ai fiori appassiti, perché sono testimoni di una trasformazione.",
 ]
