@@ -11,29 +11,6 @@ for (let i = 0; i < draggableElems.length; i++) {
     draggies.push(draggie);
 };
 
-// const sectionsSelector = () => {
-//     const sectionElement = document.querySelectorAll(".button-element");
-//     const relatedSections = document.querySelectorAll(".related-section");
-//     const mainSection = document.querySelector(".main-section");
-
-//     sectionElement.forEach(element => {
-//         element.addEventListener("click", (e) => {
-//             const pathName = e.currentTarget.dataset.path
-//             console.log(pathName);
-//             relatedSections.forEach(section => {
-//                 const sectionPath = section.dataset.path;
-//                 if (pathName === sectionPath) {
-//                     console.log(section);
-//                     section.scrollTop;
-//                     mainSection.style.display = "none";
-//                 } else {
-//                     section.style.display = "none";
-//                 }
-//             });
-//         });
-//     });
-// };
-
 const selectElements = () => {
     const elements = document.querySelectorAll(".drag-element");
     const buttons = document.querySelectorAll(".button-element");
@@ -77,9 +54,6 @@ const selectElements = () => {
         
     });
 };
-
-
-
 
 const audioPlayer = () => {
     const audioComponent = document.querySelectorAll(".audio-component");
