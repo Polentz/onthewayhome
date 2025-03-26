@@ -14,7 +14,7 @@ for (let i = 0; i < draggableElems.length; i++) {
 const selectElements = () => {
     const elements = document.querySelectorAll(".drag-element");
     const buttons = document.querySelectorAll(".button-element");
-    const footer = document.querySelector(".footer");
+    const reset = document.querySelector(".reset");
     const headerButton = document.querySelector(".button-header");
     const headerBox = document.querySelector(".header-box");
 
@@ -30,7 +30,7 @@ const selectElements = () => {
                         element.classList.add("opacity");
                     }, 500);
                     setTimeout(() => {
-                        footer.classList.add("show");
+                        reset.classList.add("show");
                     }, 1000);
                 };
                 if (pathName != elementPath && element.classList.contains("step-1")) {

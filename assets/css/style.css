@@ -239,7 +239,7 @@ a:hover {
     opacity: 1;
 }
 
-.footer {
+.reset {
     width: 100%;
     position: fixed;
     bottom: 40px;
@@ -247,11 +247,21 @@ a:hover {
     opacity: 0;
     pointer-events: none;
     transition: opacity .75s ease-in-out;
+    z-index: 999;
 }
 
-.footer.show {
+.reset.show {
     opacity: 1;
     pointer-events: all;
+}
+
+.footer {
+    width: 100%;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    text-align: end;
+    font-size: .9rem;
 }
 
 /* audio player */
