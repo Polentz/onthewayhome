@@ -90,16 +90,6 @@ a:hover {
     user-select: none;
 }
 
-/* .drag-element.step-1.selected .drag-element-wrapper {
-    background-color: var(--main-color);
-    color: white;
-}
-
-.drag-element.step-1.selected .button-element {
-    color: white;
-    pointer-events: none;
-} */
-
 .drag-element.step-1.opacity {
     opacity: 0;
     pointer-events: none;
@@ -184,12 +174,21 @@ a:hover {
     padding: 32px;
 }
 
-.button-element {
+.button-element,
+.button-element-disabled {
     font-size: .9rem;
     padding: 8px 32px;
     text-align: center;
     color: var(--main-color);
+}
+
+.button-element {
     cursor: pointer;
+}
+
+.button-element-disabled {
+    opacity: .5;
+    cursor: default;
 }
 
 .button-element:hover {
@@ -199,7 +198,13 @@ a:hover {
 }
 
 .button-element.selected {
-    display: none;
+    opacity: .5;
+    cursor: default;
+}
+
+.button-element.selected:hover {
+    font-style: normal;
+    text-decoration: none;
 }
 
 .header {
@@ -215,6 +220,16 @@ a:hover {
     text-decoration: underline;
     text-underline-offset: 2px;
     cursor: pointer;
+}
+
+.button-header.share {
+    display: none;
+}
+
+.button-header.start.started {
+    font-style: normal;
+    text-decoration: none;
+    cursor: default;
 }
 
 .button-header:hover {
@@ -235,8 +250,21 @@ a:hover {
     margin: 1rem 0;
 }
 
-.header-box.opacity p {
+.header-box.opacity p,
+.header-box.opacity .form-sample {
     opacity: 1;
+}
+
+.form-sample {
+    width: 750px;
+    height: 300px;
+    border: 1px solid var(--main-color);
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity .75s ease-in-out;
 }
 
 .reset {

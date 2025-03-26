@@ -16,6 +16,8 @@ const selectElements = () => {
     const buttons = document.querySelectorAll(".button-element");
     const reset = document.querySelector(".reset");
     const headerButton = document.querySelector(".button-header");
+    // const headerButtonStart = document.querySelector(".button-header.start");
+    // const headerButtonShare = document.querySelector(".button-header.share");
     const headerBox = document.querySelector(".header-box");
 
     buttons.forEach(button => {
@@ -32,16 +34,35 @@ const selectElements = () => {
                     setTimeout(() => {
                         reset.classList.add("show");
                     }, 1000);
-                };
-                if (pathName != elementPath && element.classList.contains("step-1")) {
+                } else {
                     element.classList.add("opacity");
                     setTimeout(() => {
                         element.classList.add("hide");
                     }, 1000);
-                };
+                }
+                // if (pathName != elementPath && element.classList.contains("step-1")) {
+                //     element.classList.add("opacity");
+                //     setTimeout(() => {
+                //         element.classList.add("hide");
+                //     }, 1000);
+                // };
             });
         });
     });
+
+    // headerButtonStart.addEventListener("click", () => {
+    //     elements.forEach(element => {
+    //         if(element.classList.contains("step-1")) {
+    //             element.classList.add("show");
+    //             setTimeout(() => {
+    //                 element.classList.add("opacity");
+    //             }, 500);                
+    //         };
+    //         headerButtonStart.classList.add("started");
+    //         headerButtonShare.style.display = "block";
+    //     });
+        
+    // });
 
     headerButton.addEventListener("click", () => {
         elements.forEach(element => {
