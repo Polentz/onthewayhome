@@ -11,104 +11,275 @@
 </head>
 
 <body>
-    <section class="background"></section>
+    <header class="header">
+        <p><em>Sulla via di casa</em> esplora possibili percorsi verso casa.</p>
+        <p>Qui troverai delle tracce che altre persone hanno raccolto nei loro percorsi.</p>
+        <p>Scegli tra le tracce, come a un bivio, per costruire il tuo.</p>
+        <p class="button-header">Com'è la tua via verso casa?</p>
+        <div class="header-box">
+            <p>Vuoi lasciare una traccia audio, un’immagine, delle parole nate durante la tua via verso casa?</p>
+            <p>Le tue tracce faranno parte della mappa delle vie verso casa/galassia delle vie verso casa</p>
+            <p>Puoi inviarle a <a href="mailto:unrequestedstories.onthewayhome@gmail.com">unrequestedstories.onthewayhome@gmail.com</a></p>
+            <p>oppure <a href="">Ricomincia</a></p>
+        </div>
+                
+    </header>
 
-    <section class="line-layout">
-        <div class="blocks">
-            <div class="block first-block">
-                Come è la tua via verso casa?
+    <section class="main-section drag-layout">
+        <!-- path-1 -->
+        <div id="first-path" class="drag-element step-1" data-path="path-1" data-step="step-1">
+            <div class="drag-element-wrapper draggable">
+                <img class="drag-image" src="assets/media/new-media/1_ IMMAGINE.jpg">
+                <button class="button-element" data-path="path-1">Scegli questa traccia</button>
+            </div>
+        </div>
+        <div class="drag-element step-2" data-path="path-1" data-step="step-2">
+            <div class="drag-element-wrapper draggable">
+                <div class="text-box">
+                    <p>Sono a Firenze, Palazzo Pitti sembra scivolare davanti all'ingresso della casa degli alabardieri: è di pietra, dentro filtra pochissima luce. Potrebbe esserci il sole o L'aurora boreale, oppure cadere una neve nucleare e sarebbe lo stesso. I gatti  di quella casa hanno il nome dei traditori: Giuda e Salomè. Il grande camino spento assorbe le fitte parole mie e di Franz, che prima era Marta. Non è stato difficile chiamarlo al maschile. Parliamo di allodole, di caccia, del canto che segna il giorno, di musica che fa crescere l'alba //</p>                
+                </div>
+            </div>
+        </div>
+        <div class="drag-element step-2" data-path="path-1" data-step="step-2">
+            <div class="drag-element-wrapper audio draggable">
+                <div class="audio-component">
+                    <div class="audio-player">
+                        <div class="play-btn">
+                            <svg class="play-icon" viewBox="0 0 27 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 25L25 13.3077L1 1V25Z" />
+                            </svg>
+                            <svg class="pause-icon" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 0V24M8 0V24" />
+                            </svg>
+                        </div>
+                        <div class="stop-btn">
+                            <svg class="stop-icon" viewBox="0 0 26 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L1 25L25 25L25 1L1 1Z" />
+                            </svg>
+                        </div>
+                        <div class="audio-time">
+                            <span class="audio-progress">0:00</span> / <span class="audio-duration"></span>
+                        </div>
+                        <div class="seek-slider-container">
+                            <input type="range" class="seek-slider" max="100" value="0">
+                        </div>
+                        <div class="audio-volume">
+                            <svg class="volume-icon" viewBox="0 0 29 28" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M25 10V18M28 8V20M8 19H1V9H8L17 2V26L8 19Z" />
+                            </svg>
+                            <svg class="mute-icon" viewBox="0 0 29 28" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M28 11L22 17M28 17L22 11M8 19H1V9H8L17 2V26L8 19Z" />
+                            </svg>
+
+                        </div>
+                    </div>
+                    <audio src="assets/media/new-media/1.2_ AUDIO_ Una volta che ti sei scoperto a casa_ Simone.mp3" preload="metadata"></audio>
+                </div>
+            </div>
+        </div>
+
+        <!-- path-2 -->
+        <div id="second-path" class="drag-element step-1" data-path="path-2" data-step="step-1">
+            <div class="drag-element-wrapper draggable">
+                <div class="text-box">
+                    <p>Un pullman isuzu, giapponese, bianco, vecchio di almeno vent'anni, con la grande scritta in lettere blu “Stanišić”. Dentro tante persone, gli anziani, i giovani, le persone di mezz'età, lavoratori, studenti, ma un sedile vuoto accanto a me. La musica della radio Elmag trasmette una canzone pop degli anni Novanta dell'ex-Jugoslavia. Due corsie, tante curve e le montagne.</p>
+                </div>
+                <button class="button-element" data-path="path-2">Scegli questa traccia</button>
+            </div>
+        </div>
+        <div class="drag-element step-2" data-path="path-2" data-step="step-2">
+            <div class="drag-element-wrapper draggable audio">
+                <div class="audio-component">
+                    <div class="audio-player">
+                        <div class="play-btn">
+                            <svg class="play-icon" viewBox="0 0 27 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 25L25 13.3077L1 1V25Z" />
+                            </svg>
+                            <svg class="pause-icon" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 0V24M8 0V24" />
+                            </svg>
+                        </div>
+                        <div class="stop-btn">
+                            <svg class="stop-icon" viewBox="0 0 26 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L1 25L25 25L25 1L1 1Z" />
+                            </svg>
+                        </div>
+                        <div class="audio-time">
+                            <span class="audio-progress">0:00</span> / <span class="audio-duration"></span>
+                        </div>
+                        <div class="seek-slider-container">
+                            <input type="range" class="seek-slider" max="100" value="0">
+                        </div>
+                        <div class="audio-volume">
+                            <svg class="volume-icon" viewBox="0 0 29 28" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M25 10V18M28 8V20M8 19H1V9H8L17 2V26L8 19Z" />
+                            </svg>
+                            <svg class="mute-icon" viewBox="0 0 29 28" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M28 11L22 17M28 17L22 11M8 19H1V9H8L17 2V26L8 19Z" />
+                            </svg>
+
+                        </div>
+                    </div>
+                    <audio src="assets/media/new-media/2.1 AUDIO_ mare.mp3" preload="metadata"></audio>
+                </div>
+            </div>
+        </div>
+        <div class="drag-element step-2" data-path="path-2" data-step="step-2">
+            <div class="drag-element-wrapper draggable">
+                <img class="drag-image" src="assets/media/new-media/2.2_IMMAGINE_ Doriana.jpg">
+            </div>
+        </div>
+
+        <!-- path-3 -->
+        <div id="third-path" class="drag-element step-1" data-path="path-3" data-step="step-1">
+            <div class="drag-element-wrapper draggable">
+                <img class="drag-image" src="assets/media/new-media/3 IMMAGINE_ cartello piccioni.jpeg">
+                <button class="button-element" data-path="path-3">Scegli questa traccia</button>
+            </div>
+        </div>
+        <div class="drag-element step-2" data-path="path-3" data-step="step-2">
+            <div class="drag-element-wrapper draggable">
+                <img class="drag-image" src="assets/media/new-media/3.1 IMMAGINE_ mucche.jpeg">
+            </div>
+        </div>
+        <div class="drag-element step-2" data-path="path-3" data-step="step-2">
+            <div class="drag-element-wrapper audio draggable">
+                <div class="audio-component">
+                    <div class="audio-player">
+                        <div class="play-btn">
+                            <svg class="play-icon" viewBox="0 0 27 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 25L25 13.3077L1 1V25Z" />
+                            </svg>
+                            <svg class="pause-icon" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 0V24M8 0V24" />
+                            </svg>
+                        </div>
+                        <div class="stop-btn">
+                            <svg class="stop-icon" viewBox="0 0 26 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L1 25L25 25L25 1L1 1Z" />
+                            </svg>
+                        </div>
+                        <div class="audio-time">
+                            <span class="audio-progress">0:00</span> / <span class="audio-duration"></span>
+                        </div>
+                        <div class="seek-slider-container">
+                            <input type="range" class="seek-slider" max="100" value="0">
+                        </div>
+                        <div class="audio-volume">
+                            <svg class="volume-icon" viewBox="0 0 29 28" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M25 10V18M28 8V20M8 19H1V9H8L17 2V26L8 19Z" />
+                            </svg>
+                            <svg class="mute-icon" viewBox="0 0 29 28" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M28 11L22 17M28 17L22 11M8 19H1V9H8L17 2V26L8 19Z" />
+                            </svg>
+
+                        </div>
+                    </div>
+                    <audio src="assets/media/new-media/3.2_AUDIO_ piccione.mp3" preload="metadata"></audio>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="drag-layout">
-        <div class="drag-element">
-            <div id="bleah" class="drag-element-wrapper draggable">
-                <img class="drag-image" src="assets/media/Doriana Crema_ una volta in cui ti sei scoperta a casa 2_ Floating bodies.jpeg">
+    <!-- <section class="section main-section">
+        <div class="section-header">
+            <p><em>Sulla via di casa</em> esplora i percorsi verso casa.</p>
+            <p>Qui troverai delle tracce che altre persone hanno raccolto nelle loro vie verso casa.</p>
+            <p>Scegli tra le tracce, come a un bivio, per costruire il tuo percorso.</p>
+            <p>Per trovare la tua via verso casa.</p>
+            <p>Com'è la tua via verso casa?</p>    
+        </div>
+        <div class="section-grid repeat-3">
+            <div class="section-block draggable" data-path="path-1">
+                <figure>
+                    <img src="assets/media/new-media/1_ IMMAGINE.jpg">
+                    <figcaption class="button-element" data-path="path-1">Scegli questa traccia</figcaption>
+                </figure>
+            </div>
+
+            <div class="section-block draggable" data-path="path-2">
+                <div class="text-box">
+                    <p>Un pullman isuzu, giapponese, bianco, vecchio di almeno vent'anni, con la grande scritta in lettere blu “Stanišić”. Dentro tante persone, gli anziani, i giovani, le persone di mezz'età, lavoratori, studenti, ma un sedile vuoto accanto a me. La musica della radio Elmag trasmette una canzone pop degli anni Novanta dell'ex-Jugoslavia. Due corsie, tante curve e le montagne.</p>
+                </div>
+                <div class="button-element" data-path="path-2">Scegli questa traccia</div>
+            </div>
+
+            <div class="section-block draggable" data-path="path-3">
+                <figure>
+                    <img src="assets/media/new-media/3 IMMAGINE_ cartello piccioni.jpeg">
+                    <figcaption class="button-element" data-path="path-3">Scegli questa traccia</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- <section class="section related-section section-2" data-path="path-1">
+        <div class="section-grid repeat-2">
+            <div class="section-block">
+                <div class="text-box">
+                    <p>Sono a Firenze, Palazzo Pitti sembra scivolare davanti all'ingresso della casa degli alabardieri: è di pietra, dentro filtra pochissima luce. Potrebbe esserci il sole o L'aurora boreale, oppure cadere una neve nucleare e sarebbe lo stesso. I gatti  di quella casa hanno il nome dei traditori: Giuda e Salomè. Il grande camino spento assorbe le fitte parole mie e di Franz, che prima era Marta. Non è stato difficile chiamarlo al maschile. Parliamo di allodole, di caccia, del canto che segna il giorno, di musica che fa crescere l'alba //</p>
+                </div>
+            </div>
+            <div class="section-block draggable">
+                <div class="audio">
+                    <div class="audio-svg">
+                        <svg class="equilizer" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <title>Audio Equilizer</title>
+                                <rect class="bar" transform="translate(0,0)" y="15"></rect>
+                                <rect class="bar" transform="translate(25,0)" y="15"></rect>
+                                <rect class="bar" transform="translate(50,0)" y="15"></rect>
+                                <rect class="bar" transform="translate(75,0)" y="15"></rect>
+                                <rect class="bar" transform="translate(100,0)" y="15"></rect>
+                            </g>
+                        </svg>
+                        <p class="audio-button">PLAY</p>
+                    </div>
+                    <audio class="audio-file">
+                        <source src="assets/media/new-media/1.2_ AUDIO_ Una volta che ti sei scoperto a casa_ Simone.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
             </div>
         </div>
 
-        <div class="drag-element">
-            <div class="drag-element-wrapper draggable">
-                <img class="drag-image" src="assets/media/Doriana Crema_ una volta in cui ti sei scoperta a casa_ Floating Bodies.jpg">
-            </div>
-        </div>
-
-        <div class="drag-element">
-            <div class="drag-element-wrapper draggable">
-                <img class="drag-image" src="assets/media/Immagine di ispirazione del progetto.jpg">
-            </div>
-        </div>
-
-        <div class="drag-element">
-            <div class="drag-element-wrapper draggable">
-                <img class="drag-image" src="assets/media/Immagine di ispirazione per il progetto.JPG">
-            </div>
-        </div>
-
-        <div class="drag-element">
-            <div class="drag-element-wrapper draggable">
-                <img class="drag-image" src="assets/media/Immagine inviata da Lucy a utente.jpeg">
-            </div>
-        </div>
-
-        <div class="drag-element">
-            <div class="drag-element-wrapper draggable">
-                <img class="drag-image" src="assets/media/Immagine inviata da Lucy a utente_2.jpeg">
-            </div>
-        </div>
-
-        <div class="drag-element">
-            <div class="drag-element-wrapper draggable">
-                <img class="drag-image" src="assets/media/Immagine inviata da utente durante il servizio.jpeg">
-            </div>
-        </div>
-
-        <div class="drag-element">
-            <div class="drag-element-wrapper draggable">
-                <img class="drag-image" src="assets/media/Immagine inviata da utente durante il servizio_ 2.jpeg">
-            </div>
-        </div>
-
-        <div class="drag-element">
-            <div class="drag-element-wrapper draggable">
-                <img class="drag-image" src="assets/media/Immagine inviata da utente durante il servizio_3.jpeg">
-            </div>
-        </div>
-
-        <div class="drag-element">
-            <div class="drag-element-wrapper draggable">
-                <img class="drag-image" src="assets/media/Immagine inviata da utente durante il servizio_4.jpeg">
-            </div>
-        </div>
-
-        <div class="drag-element">
-            <div class="drag-element-wrapper draggable">
-                <img class="drag-image" src="assets/media/Immagine inviata da utente durante il servizio_5.jpeg">
-            </div>
-        </div>
-
-        <div class="drag-element">
-            <div class="drag-element-wrapper draggable">
-                <img class="drag-image" src="assets/media/Immagine inviata da utente durante il servizio_6.jpeg">
-            </div>
-        </div>
     </section>
+
+    <section class="section related-section section-3" data-path="path-2">
+
+    </section>
+
+    <section class="section related-section section-4" data-path="path-3">
+
+    </section> -->
 
     <section class="mobile">
-        <div class="mobile-wrapper">
-            <!-- <p>This sample web page is not optimized for mobile devices. Please use your desktop device to navigate it.</p> -->
+        <div class="text-box">
             <p>Questo esempio di pagina web non è ottimizzato per i dispositivi mobili. Utilizzate il vostro dispositivo desktop per navigarlo.</p>
         </div>
     </section>
 
     <footer class="footer">
-
+        <a href="option.html">Ricomincia</a>
     </footer>
+
     <noscript>Please turn on JS to navigate this website</noscript>
     <script src="https://unpkg.com/draggabilly@3/dist/draggabilly.pkgd.min.js"></script>
-    <script src="assets/js/p5.js"></script>
     <script src="assets/js/script.js"></script>
-    <script src="assets/js/animation.js"></script>
 </body>
 </html>
