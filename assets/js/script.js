@@ -15,10 +15,8 @@ const selectElements = () => {
     const elements = document.querySelectorAll(".drag-element");
     const buttons = document.querySelectorAll(".button-element");
     const reset = document.querySelector(".reset");
-    const headerButton = document.querySelector(".button-header");
-    // const headerButtonStart = document.querySelector(".button-header.start");
-    // const headerButtonShare = document.querySelector(".button-header.share");
-    const headerBox = document.querySelector(".header-box");
+    // const headerButton = document.querySelector(".button-header");
+    // const headerBox = document.querySelector(".header-box");
 
     buttons.forEach(button => {
         button.addEventListener("click", (e) => {
@@ -39,7 +37,7 @@ const selectElements = () => {
                     setTimeout(() => {
                         element.classList.add("hide");
                     }, 1000);
-                }
+                };
                 // if (pathName != elementPath && element.classList.contains("step-1")) {
                 //     element.classList.add("opacity");
                 //     setTimeout(() => {
@@ -50,30 +48,16 @@ const selectElements = () => {
         });
     });
 
-    // headerButtonStart.addEventListener("click", () => {
+    // headerButton.addEventListener("click", () => {
     //     elements.forEach(element => {
-    //         if(element.classList.contains("step-1")) {
-    //             element.classList.add("show");
-    //             setTimeout(() => {
-    //                 element.classList.add("opacity");
-    //             }, 500);                
-    //         };
-    //         headerButtonStart.classList.add("started");
-    //         headerButtonShare.style.display = "block";
+    //         element.style.display = "none";
+    //         headerBox.style.display = "block";
+    //         setTimeout(() => {
+    //             headerBox.classList.add("opacity");
+    //         }, 100);
     //     });
         
     // });
-
-    headerButton.addEventListener("click", () => {
-        elements.forEach(element => {
-            element.style.display = "none";
-            headerBox.style.display = "block";
-            setTimeout(() => {
-                headerBox.classList.add("opacity");
-            }, 100);
-        });
-        
-    });
 };
 
 const audioPlayer = () => {

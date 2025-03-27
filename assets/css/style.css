@@ -25,14 +25,14 @@ em {
 }
 
 a {
-    font-style: italic;
-    text-decoration: underline;
-    text-underline-offset: 2px;
+    font-style: normal;
+    text-decoration: none;
 }
 
 a:hover {
-    font-style: normal;
-    text-decoration: none;
+    font-style: italic;
+    text-decoration: underline;
+    text-underline-offset: 2px;
 }
 
 .drag-layout {
@@ -141,8 +141,8 @@ a:hover {
 }
 
 .drag-element:nth-of-type(2) {
-    top: 50%;
-    left: 35%;
+    top: 20%;
+    left: 15%;
 }
 
 .drag-element:nth-of-type(3) {
@@ -246,6 +246,7 @@ a:hover {
     transition: opacity .75s ease-in-out;
 }
 
+.header p:last-child,
 .header-box p:last-child {
     margin: 1rem 0;
 }
@@ -271,7 +272,7 @@ a:hover {
     width: 100%;
     position: fixed;
     bottom: 40px;
-    text-align: center;
+    left: 2rem;
     opacity: 0;
     pointer-events: none;
     transition: opacity .75s ease-in-out;
@@ -459,7 +460,6 @@ input.seek-slider::-moz-range-thumb {
     display: none;
 }
 
-
 @media screen and (max-width: 720px) {
     .mobile {
         width: 100%;
@@ -491,12 +491,10 @@ input.seek-slider::-moz-range-thumb {
         border: 1px solid #000;
         background-color: #fff;
     }
-
+    .header,
+    .footer,
+    .reset,
     .drag-layout {
-        display: none;
-    }
-
-    .header {
         display: none;
     }
 }
